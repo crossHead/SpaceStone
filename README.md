@@ -1,2 +1,2 @@
 # SpaceStone
- Infinity Code Game Innerve
+## Infinity Code Game Innerve
