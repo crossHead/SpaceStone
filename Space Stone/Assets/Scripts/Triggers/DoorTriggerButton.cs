@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class DoorTriggerButton : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private DoorAnimated door;
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        if(Input.GetKeyDown(KeyCode.F))
+            door.OpenDoor();
+
+        if(Input.GetKeyDown(KeyCode.G))
+            door.CloseDoor();  
     }
 }

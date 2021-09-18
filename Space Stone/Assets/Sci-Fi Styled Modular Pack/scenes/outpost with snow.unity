@@ -3406,6 +3406,7 @@ GameObject:
   m_Component:
   - component: {fileID: 485072249}
   - component: {fileID: 485072248}
+  - component: {fileID: 485072250}
   - component: {fileID: 485072247}
   m_Layer: 0
   m_Name: ButtonDoor1
@@ -3414,18 +3415,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &485072247
-MonoBehaviour:
+--- !u!65 &485072247
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 485072246}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7df3196cc721e042af41656d3d8262c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  serializedVersion: 2
+  m_Size: {x: 0.16000001, y: 0.16000004, z: 0.20000005}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!212 &485072248
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3490,6 +3492,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 89.464005, y: -100.873, z: -62.608}
+--- !u!114 &485072250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 485072246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46900e2a7e3572e4eba2d37fbca4349c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &489198694
 PrefabInstance:
   m_ObjectHideFlags: 0
