@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class door4 : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+[SerializeField] private Animator MyAnimationController;
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        
+        if(other.CompareTag("Player"))
+        {
+            MyAnimationController.SetBool("char_nearby", true);
+            MyAnimationController.SetBool("char_nearby", true);
+        }
     }
 }
