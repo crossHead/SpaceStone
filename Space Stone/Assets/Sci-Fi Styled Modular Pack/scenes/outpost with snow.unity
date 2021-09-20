@@ -3661,6 +3661,10 @@ PrefabInstance:
       propertyPath: m_Lightmapping
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 19818464, guid: 496fa247adc61d44ebaeaf9d72671287, type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 200
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 496fa247adc61d44ebaeaf9d72671287, type: 3}
 --- !u!4 &590304609 stripped
@@ -5625,8 +5629,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 961560623}
-  speed: 5
-  jumpHeight: 3.5
+  speed: 1
+  jumpHeight: 2
   gravity: -30
   groundMask:
     serializedVersion: 2
@@ -5643,7 +5647,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38474037e13738d44988af89790fea12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sensitivityX: 5
+  sensitivityX: 1
   sensitivityY: 0.2
   playerCamera: {fileID: 1674299967}
   xClamp: 85
@@ -14151,7 +14155,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 417258, guid: ac7a01ca06ca9044eb15b32cb7a936f8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.31
+      value: -5.84
       objectReference: {fileID: 0}
     - target: {fileID: 417258, guid: ac7a01ca06ca9044eb15b32cb7a936f8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -14175,7 +14179,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 435530, guid: ac7a01ca06ca9044eb15b32cb7a936f8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.02
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: 11444398, guid: ac7a01ca06ca9044eb15b32cb7a936f8, type: 3}
       propertyPath: character
