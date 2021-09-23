@@ -3,22 +3,25 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class door2 : MonoBehaviour
+public class ButtonTrigger : MonoBehaviour
 {
     public InputField answer;
-
+    public string actualAns;
     public GameObject door;
+   
     public GameObject door2img;
     [SerializeField] private Animator MyAnimationController;
+   
 
     public void onSubmit()
     {
-        if(answer.text == "4")
+        if(answer.text.ToUpper() == actualAns)
         {
             door.SetActive(false);
             door2img.SetActive(false);
             Debug.Log("You did it!");
             MyAnimationController.SetBool("open", true);
+          
         }
         else
             Debug.Log("Try Again!");
