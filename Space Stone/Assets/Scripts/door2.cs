@@ -9,7 +9,7 @@ public class door2 : MonoBehaviour
 
     public GameObject door;
     public GameObject door2img;
-    //[SerializeField] private Animator MyAnimationController;
+    [SerializeField] private Animator MyAnimationController;
 
     public void onSubmit()
     {
@@ -18,7 +18,7 @@ public class door2 : MonoBehaviour
             door.SetActive(false);
             door2img.SetActive(false);
             Debug.Log("You did it!");
-        //    MyAnimationController.SetBool("play_anim", true);
+            MyAnimationController.SetBool("open", true);
         }
         else
             Debug.Log("Try Again!");
