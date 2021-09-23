@@ -15,7 +15,7 @@ public class ButtonTrigger : MonoBehaviour
 
     public void onSubmit()
     {
-        if(answer.text.ToUpper() == actualAns)
+        if(answer.text.ToUpper() == actualAns.ToUpper())
         {
             door.SetActive(false);
             door2img.SetActive(false);
@@ -24,6 +24,6 @@ public class ButtonTrigger : MonoBehaviour
           
         }
         else
-            Debug.Log("Try Again!");
+            Debug.Log(answer.text);
     }
 }
